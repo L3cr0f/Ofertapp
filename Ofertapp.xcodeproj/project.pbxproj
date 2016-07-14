@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F194FDD73C4E507DC512EEB /* Pods_Ofertapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D66C3C6FF0E08FD01C852E /* Pods_Ofertapp.framework */; };
+		8D01DB301C95B8C400276CFB /* OfertappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D01DB2F1C95B8C400276CFB /* OfertappTests.swift */; };
+		8D01DB3B1C95B8C400276CFB /* OfertappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D01DB3A1C95B8C400276CFB /* OfertappUITests.swift */; };
+		8D01DB4E1C95B90C00276CFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D01DB481C95B90C00276CFB /* AppDelegate.swift */; };
+		8D01DB4F1C95B90C00276CFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D01DB491C95B90C00276CFB /* Assets.xcassets */; };
+		8D063D7B1CD4AEF7001E65D1 /* ShowOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D063D7A1CD4AEF7001E65D1 /* ShowOffer.swift */; };
+		8D10DB791CAFC49E00842ED5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D10DB781CAFC49E00842ED5 /* CoreLocation.framework */; };
+		8D10DB7B1CAFCD3100842ED5 /* OffersTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10DB7A1CAFCD3100842ED5 /* OffersTableCell.swift */; };
+		8D10DB7F1CAFE82100842ED5 /* OffersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D10DB7E1CAFE82100842ED5 /* OffersTableViewController.swift */; };
+		8D21EB9E1CCB86C0000A8785 /* AddOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21EB9D1CCB86C0000A8785 /* AddOffer.swift */; };
+		8D2D14FB1CDBAF64000A8101 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14FA1CDBAF64000A8101 /* UserModel.swift */; };
+		8D2D14FD1CDBB75C000A8101 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2D14FC1CDBB75C000A8101 /* Registration.swift */; };
+		8D44AF621CDF3B9600D18D75 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AF601CDF3B9600D18D75 /* User.xcdatamodeld */; };
+		8D44AF6E1CDF462E00D18D75 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D44AF6C1CDF462E00D18D75 /* User.swift */; };
+		8D4C5E4B1C9AD27E00849406 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D4C5E4A1C9AD27E00849406 /* MapKit.framework */; };
+		8D7524701CEB00D600B1BDAF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D75246F1CEB00D600B1BDAF /* CoreData.framework */; };
+		8D99CC071CE4E3FB005B0A91 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D99CC061CE4E3FB005B0A91 /* User+CoreDataProperties.swift */; };
+		8DBA80BC1CDDDA6300774DD7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA80BB1CDDDA6300774DD7 /* Login.swift */; };
+		8DD21C4A1CD8A95D0074F28E /* Help.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD21C491CD8A95D0074F28E /* Help.swift */; };
+		8DE3C6A81CD902F800ED4885 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE3C6A71CD902F800ED4885 /* Settings.swift */; };
+		8DE7A79E1CAE75AF00737249 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7A78C1CAE75AF00737249 /* FirstViewController.swift */; };
+		8DE7A79F1CAE75AF00737249 /* LeftMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7A78D1CAE75AF00737249 /* LeftMenu.swift */; };
+		8DE7A7A01CAE75AF00737249 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7A78E1CAE75AF00737249 /* MainScreen.swift */; };
+		8DE7A7A21CAE75AF00737249 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7A7901CAE75AF00737249 /* MyPageViewController.swift */; };
+		8DE7A7A31CAE75AF00737249 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7A7911CAE75AF00737249 /* SecondViewController.swift */; };
+		8DE7A7A61CAE75AF00737249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE7A7991CAE75AF00737249 /* LaunchScreen.storyboard */; };
+		8DE7A7A71CAE75AF00737249 /* MainScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DE7A79B1CAE75AF00737249 /* MainScreen.storyboard */; };
+		8DE7A7A91CAE7BE000737249 /* OffersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7A7A81CAE7BE000737249 /* OffersModel.swift */; };
+		8DFF2DEC1C98206700FA35E9 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 8DFF2DEB1C98206700FA35E9 /* Images */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D01DB2C1C95B8C400276CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D01DB0F1C95B8C400276CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D01DB161C95B8C400276CFB;
+			remoteInfo = Ofertapp;
+		};
+		8D01DB371C95B8C400276CFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D01DB0F1C95B8C400276CFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D01DB161C95B8C400276CFB;
+			remoteInfo = Ofertapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		38D66C3C6FF0E08FD01C852E /* Pods_Ofertapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ofertapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D01DB2F1C95B8C400276CFB /* OfertappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertappTests.swift; sourceTree = "<group>"; };
+		8D01DB311C95B8C400276CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D01DB3A1C95B8C400276CFB /* OfertappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfertappUITests.swift; sourceTree = "<group>"; };
+		8D01DB3C1C95B8C400276CFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D01DB481C95B90C00276CFB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Ofertapp/AppDelegate.swift; sourceTree = "<group>"; };
+		8D01DB491C95B90C00276CFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Ofertapp/Assets.xcassets; sourceTree = "<group>"; };
+		8D01DB4B1C95B90C00276CFB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Ofertapp/Info.plist; sourceTree = "<group>"; };
+		8D063D7A1CD4AEF7001E65D1 /* ShowOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowOffer.swift; sourceTree = "<group>"; };
+		8D10DB781CAFC49E00842ED5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8D10DB7A1CAFCD3100842ED5 /* OffersTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersTableCell.swift; sourceTree = "<group>"; };
+		8D10DB7E1CAFE82100842ED5 /* OffersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OffersTableViewController.swift; path = Ofertapp/Controllers/OffersTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		8D21EB9D1CCB86C0000A8785 /* AddOffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddOffer.swift; sourceTree = "<group>"; };
+		8D2D14FA1CDBAF64000A8101 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8D2D14FC1CDBB75C000A8101 /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		8D44AF611CDF3B9600D18D75 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		8D44AF6C1CDF462E00D18D75 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Ofertapp/User.swift; sourceTree = "<group>"; };
+		8D4C5E4A1C9AD27E00849406 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8D75246F1CEB00D600B1BDAF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8D99CC061CE4E3FB005B0A91 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "Ofertapp/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8DBA80BB1CDDDA6300774DD7 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		8DD21C491CD8A95D0074F28E /* Help.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Help.swift; sourceTree = "<group>"; };
+		8DE3C6A71CD902F800ED4885 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		8DE7A78C1CAE75AF00737249 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		8DE7A78D1CAE75AF00737249 /* LeftMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenu.swift; sourceTree = "<group>"; };
+		8DE7A78E1CAE75AF00737249 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		8DE7A7901CAE75AF00737249 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		8DE7A7911CAE75AF00737249 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		8DE7A79A1CAE75AF00737249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8DE7A79C1CAE75AF00737249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainScreen.storyboard; sourceTree = "<group>"; };
+		8DE7A7A81CAE7BE000737249 /* OffersModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffersModel.swift; sourceTree = "<group>"; };
+		8DF099D31C986B69007E6DE0 /* Ofertapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ofertapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF099D41C986B69007E6DE0 /* OfertappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfertappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF099D51C986B69007E6DE0 /* OfertappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OfertappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DFF2DEB1C98206700FA35E9 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = Ofertapp/Images; sourceTree = "<group>"; };
+		B878AEBB47D7BB276A8E5DBC /* Pods-Ofertapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ofertapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ofertapp/Pods-Ofertapp.debug.xcconfig"; sourceTree = "<group>"; };
+		CA88296F57E6E2DF058494DC /* Pods-Ofertapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ofertapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ofertapp/Pods-Ofertapp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D01DB141C95B8C400276CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D7524701CEB00D600B1BDAF /* CoreData.framework in Frameworks */,
+				8D10DB791CAFC49E00842ED5 /* CoreLocation.framework in Frameworks */,
+				8D4C5E4B1C9AD27E00849406 /* MapKit.framework in Frameworks */,
+				0F194FDD73C4E507DC512EEB /* Pods_Ofertapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01DB281C95B8C400276CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01DB331C95B8C400276CFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4935C4181073D56FE84D5264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D75246F1CEB00D600B1BDAF /* CoreData.framework */,
+				8D10DB781CAFC49E00842ED5 /* CoreLocation.framework */,
+				38D66C3C6FF0E08FD01C852E /* Pods_Ofertapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8D01DB0E1C95B8C400276CFB = {
+			isa = PBXGroup;
+			children = (
+				8D4C5E4A1C9AD27E00849406 /* MapKit.framework */,
+				8D01DB481C95B90C00276CFB /* AppDelegate.swift */,
+				8D01DB491C95B90C00276CFB /* Assets.xcassets */,
+				8D99CC061CE4E3FB005B0A91 /* User+CoreDataProperties.swift */,
+				8D44AF6C1CDF462E00D18D75 /* User.swift */,
+				8DE7A78A1CAE75AF00737249 /* Controllers */,
+				8DE7A7971CAE75AF00737249 /* Models */,
+				8DE7A7981CAE75AF00737249 /* Storyboards */,
+				8D01DB4B1C95B90C00276CFB /* Info.plist */,
+				8DFF2DEB1C98206700FA35E9 /* Images */,
+				8D01DB191C95B8C400276CFB /* Ofertapp */,
+				8D01DB2E1C95B8C400276CFB /* OfertappTests */,
+				8D01DB391C95B8C400276CFB /* OfertappUITests */,
+				FEF46C62563EF0BFA37ACC27 /* Pods */,
+				4935C4181073D56FE84D5264 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D01DB191C95B8C400276CFB /* Ofertapp */ = {
+			isa = PBXGroup;
+			children = (
+				8DF099D31C986B69007E6DE0 /* Ofertapp.app */,
+				8DF099D41C986B69007E6DE0 /* OfertappTests.xctest */,
+				8DF099D51C986B69007E6DE0 /* OfertappUITests.xctest */,
+			);
+			path = Ofertapp;
+			sourceTree = "<group>";
+		};
+		8D01DB2E1C95B8C400276CFB /* OfertappTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D01DB2F1C95B8C400276CFB /* OfertappTests.swift */,
+				8D01DB311C95B8C400276CFB /* Info.plist */,
+			);
+			path = OfertappTests;
+			sourceTree = "<group>";
+		};
+		8D01DB391C95B8C400276CFB /* OfertappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D01DB3A1C95B8C400276CFB /* OfertappUITests.swift */,
+				8D01DB3C1C95B8C400276CFB /* Info.plist */,
+			);
+			path = OfertappUITests;
+			sourceTree = "<group>";
+		};
+		8DE7A78A1CAE75AF00737249 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8DBA80BB1CDDDA6300774DD7 /* Login.swift */,
+				8D2D14FC1CDBB75C000A8101 /* Registration.swift */,
+				8D21EB9D1CCB86C0000A8785 /* AddOffer.swift */,
+				8DE3C6A71CD902F800ED4885 /* Settings.swift */,
+				8DD21C491CD8A95D0074F28E /* Help.swift */,
+				8DE7A78D1CAE75AF00737249 /* LeftMenu.swift */,
+				8DE7A78E1CAE75AF00737249 /* MainScreen.swift */,
+				8DE7A7901CAE75AF00737249 /* MyPageViewController.swift */,
+				8DE7A78C1CAE75AF00737249 /* FirstViewController.swift */,
+				8DE7A7911CAE75AF00737249 /* SecondViewController.swift */,
+				8D10DB7A1CAFCD3100842ED5 /* OffersTableCell.swift */,
+				8D10DB7E1CAFE82100842ED5 /* OffersTableViewController.swift */,
+				8D063D7A1CD4AEF7001E65D1 /* ShowOffer.swift */,
+			);
+			name = Controllers;
+			path = Ofertapp/Controllers;
+			sourceTree = "<group>";
+		};
+		8DE7A7971CAE75AF00737249 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DE7A7A81CAE7BE000737249 /* OffersModel.swift */,
+				8D2D14FA1CDBAF64000A8101 /* UserModel.swift */,
+				8D44AF601CDF3B9600D18D75 /* User.xcdatamodeld */,
+			);
+			name = Models;
+			path = Ofertapp/Models;
+			sourceTree = "<group>";
+		};
+		8DE7A7981CAE75AF00737249 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8DE7A7991CAE75AF00737249 /* LaunchScreen.storyboard */,
+				8DE7A79B1CAE75AF00737249 /* MainScreen.storyboard */,
+			);
+			name = Storyboards;
+			path = Ofertapp/Storyboards;
+			sourceTree = "<group>";
+		};
+		FEF46C62563EF0BFA37ACC27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B878AEBB47D7BB276A8E5DBC /* Pods-Ofertapp.debug.xcconfig */,
+				CA88296F57E6E2DF058494DC /* Pods-Ofertapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D01DB161C95B8C400276CFB /* Ofertapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D01DB3F1C95B8C400276CFB /* Build configuration list for PBXNativeTarget "Ofertapp" */;
+			buildPhases = (
+				421EEE8D72E44161EF4DEAB8 /* 📦 Check Pods Manifest.lock */,
+				8D01DB131C95B8C400276CFB /* Sources */,
+				8D01DB141C95B8C400276CFB /* Frameworks */,
+				8D01DB151C95B8C400276CFB /* Resources */,
+				D249AF2A7335310FD79C4BF3 /* 📦 Embed Pods Frameworks */,
+				7DE1C734E9523BBEDA2E4540 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ofertapp;
+			productName = Ofertapp;
+			productReference = 8DF099D31C986B69007E6DE0 /* Ofertapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D01DB2A1C95B8C400276CFB /* OfertappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D01DB421C95B8C400276CFB /* Build configuration list for PBXNativeTarget "OfertappTests" */;
+			buildPhases = (
+				8D01DB271C95B8C400276CFB /* Sources */,
+				8D01DB281C95B8C400276CFB /* Frameworks */,
+				8D01DB291C95B8C400276CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D01DB2D1C95B8C400276CFB /* PBXTargetDependency */,
+			);
+			name = OfertappTests;
+			productName = OfertappTests;
+			productReference = 8DF099D41C986B69007E6DE0 /* OfertappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D01DB351C95B8C400276CFB /* OfertappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D01DB451C95B8C400276CFB /* Build configuration list for PBXNativeTarget "OfertappUITests" */;
+			buildPhases = (
+				8D01DB321C95B8C400276CFB /* Sources */,
+				8D01DB331C95B8C400276CFB /* Frameworks */,
+				8D01DB341C95B8C400276CFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D01DB381C95B8C400276CFB /* PBXTargetDependency */,
+			);
+			name = OfertappUITests;
+			productName = OfertappUITests;
+			productReference = 8DF099D51C986B69007E6DE0 /* OfertappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D01DB0F1C95B8C400276CFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = AE;
+				TargetAttributes = {
+					8D01DB161C95B8C400276CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = G43UDVG42V;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					8D01DB2A1C95B8C400276CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8D01DB161C95B8C400276CFB;
+					};
+					8D01DB351C95B8C400276CFB = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 8D01DB161C95B8C400276CFB;
+					};
+				};
+			};
+			buildConfigurationList = 8D01DB121C95B8C400276CFB /* Build configuration list for PBXProject "Ofertapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D01DB0E1C95B8C400276CFB;
+			productRefGroup = 8D01DB0E1C95B8C400276CFB;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D01DB161C95B8C400276CFB /* Ofertapp */,
+				8D01DB2A1C95B8C400276CFB /* OfertappTests */,
+				8D01DB351C95B8C400276CFB /* OfertappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D01DB151C95B8C400276CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE7A7A61CAE75AF00737249 /* LaunchScreen.storyboard in Resources */,
+				8DE7A7A71CAE75AF00737249 /* MainScreen.storyboard in Resources */,
+				8D01DB4F1C95B90C00276CFB /* Assets.xcassets in Resources */,
+				8DFF2DEC1C98206700FA35E9 /* Images in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01DB291C95B8C400276CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01DB341C95B8C400276CFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		421EEE8D72E44161EF4DEAB8 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DE1C734E9523BBEDA2E4540 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ofertapp/Pods-Ofertapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D249AF2A7335310FD79C4BF3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Ofertapp/Pods-Ofertapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D01DB131C95B8C400276CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DE3C6A81CD902F800ED4885 /* Settings.swift in Sources */,
+				8D063D7B1CD4AEF7001E65D1 /* ShowOffer.swift in Sources */,
+				8DE7A7A01CAE75AF00737249 /* MainScreen.swift in Sources */,
+				8DD21C4A1CD8A95D0074F28E /* Help.swift in Sources */,
+				8D10DB7B1CAFCD3100842ED5 /* OffersTableCell.swift in Sources */,
+				8DE7A7A31CAE75AF00737249 /* SecondViewController.swift in Sources */,
+				8D10DB7F1CAFE82100842ED5 /* OffersTableViewController.swift in Sources */,
+				8D01DB4E1C95B90C00276CFB /* AppDelegate.swift in Sources */,
+				8D44AF6E1CDF462E00D18D75 /* User.swift in Sources */,
+				8D2D14FB1CDBAF64000A8101 /* UserModel.swift in Sources */,
+				8D2D14FD1CDBB75C000A8101 /* Registration.swift in Sources */,
+				8DE7A79E1CAE75AF00737249 /* FirstViewController.swift in Sources */,
+				8D21EB9E1CCB86C0000A8785 /* AddOffer.swift in Sources */,
+				8DE7A7A21CAE75AF00737249 /* MyPageViewController.swift in Sources */,
+				8DE7A79F1CAE75AF00737249 /* LeftMenu.swift in Sources */,
+				8D44AF621CDF3B9600D18D75 /* User.xcdatamodeld in Sources */,
+				8DE7A7A91CAE7BE000737249 /* OffersModel.swift in Sources */,
+				8D99CC071CE4E3FB005B0A91 /* User+CoreDataProperties.swift in Sources */,
+				8DBA80BC1CDDDA6300774DD7 /* Login.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01DB271C95B8C400276CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01DB301C95B8C400276CFB /* OfertappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D01DB321C95B8C400276CFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D01DB3B1C95B8C400276CFB /* OfertappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D01DB2D1C95B8C400276CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D01DB161C95B8C400276CFB /* Ofertapp */;
+			targetProxy = 8D01DB2C1C95B8C400276CFB /* PBXContainerItemProxy */;
+		};
+		8D01DB381C95B8C400276CFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D01DB161C95B8C400276CFB /* Ofertapp */;
+			targetProxy = 8D01DB371C95B8C400276CFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8DE7A7991CAE75AF00737249 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE7A79A1CAE75AF00737249 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8DE7A79B1CAE75AF00737249 /* MainScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8DE7A79C1CAE75AF00737249 /* Base */,
+			);
+			name = MainScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D01DB3D1C95B8C400276CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D01DB3E1C95B8C400276CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D01DB401C95B8C400276CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B878AEBB47D7BB276A8E5DBC /* Pods-Ofertapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Ofertapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AE.Ofertapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D01DB411C95B8C400276CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA88296F57E6E2DF058494DC /* Pods-Ofertapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Ofertapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AE.Ofertapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		8D01DB431C95B8C400276CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OfertappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AE.OfertappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ofertapp.app/Ofertapp";
+			};
+			name = Debug;
+		};
+		8D01DB441C95B8C400276CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OfertappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AE.OfertappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ofertapp.app/Ofertapp";
+			};
+			name = Release;
+		};
+		8D01DB461C95B8C400276CFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OfertappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AE.OfertappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ofertapp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		8D01DB471C95B8C400276CFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OfertappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AE.OfertappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Ofertapp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D01DB121C95B8C400276CFB /* Build configuration list for PBXProject "Ofertapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D01DB3D1C95B8C400276CFB /* Debug */,
+				8D01DB3E1C95B8C400276CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D01DB3F1C95B8C400276CFB /* Build configuration list for PBXNativeTarget "Ofertapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D01DB401C95B8C400276CFB /* Debug */,
+				8D01DB411C95B8C400276CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D01DB421C95B8C400276CFB /* Build configuration list for PBXNativeTarget "OfertappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D01DB431C95B8C400276CFB /* Debug */,
+				8D01DB441C95B8C400276CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D01DB451C95B8C400276CFB /* Build configuration list for PBXNativeTarget "OfertappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D01DB461C95B8C400276CFB /* Debug */,
+				8D01DB471C95B8C400276CFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8D44AF601CDF3B9600D18D75 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8D44AF611CDF3B9600D18D75 /* User.xcdatamodel */,
+			);
+			currentVersion = 8D44AF611CDF3B9600D18D75 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8D01DB0F1C95B8C400276CFB /* Project object */;
+}
